@@ -1,0 +1,57 @@
+### --- Python & Environnement ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.env
+.pytest_cache/
+
+### --- MLflow & Tracking ---
+# On ignore les données d'expériences locales (souvent très lourdes)
+mlruns/
+mlflow.db
+# Si vous avez des fichiers de log temporaires
+states/
+
+### --- TensorFlow & Modèles ---
+# On ne versionne pas les poids des modèles (fichiers volumineux)
+*.h5
+*.keras
+*.tflite
+*.pb
+# Dossiers de sauvegarde TensorFlow
+saved_model/
+checkpoint/
+checkpoints/
+
+### --- Données (Datasets) ---
+# Dossiers contenant vos images médicales ou fichiers NumPy
+data/
+datasets/
+*.npy
+*.npz
+*.dcm
+*.nii.gz
+
+### --- LaTeX (Rapport) ---
+# Fichiers auxiliaires générés par la compilation LaTeX
+*.aux
+*.log
+*.toc
+*.out
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+*.pdf
+# (Optionnel : retirez *.pdf si vous voulez envoyer le rapport final sur GitHub)
+
+### --- IDE & Système ---
+.vscode/
+.idea/
+*.swp
+*.swo
+Thumbs.db
+.DS_Store
